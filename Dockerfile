@@ -3,7 +3,7 @@ FROM node:20 AS builder
 WORKDIR /app
 
 COPY package.json package-lock.json ./
-RUN nvm use 18
+
 RUN npm ci
 
 COPY . .
