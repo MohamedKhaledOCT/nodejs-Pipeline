@@ -8,7 +8,7 @@ RUN npm ci
 
 COPY . .
 
-RUN npm run build
+RUN CI=false npm run build
 
 FROM node:20 AS tester
 
