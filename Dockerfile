@@ -3,12 +3,12 @@ FROM node:20 AS builder
 WORKDIR /app
 
 COPY package.json package-lock.json ./
-
+RUN nvm use 18
 RUN npm ci
 
 COPY . .
 
-RUN CI=false npm run build
+RUN npm run build
 
 FROM node:20 AS tester
 
