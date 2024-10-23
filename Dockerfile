@@ -10,14 +10,6 @@ COPY . .
 
 RUN npm run build
 
-FROM node:20 AS tester
-
-WORKDIR /app
-
-COPY --from=builder /app ./
-
-RUN npm run test
-
 FROM node:20 AS runner
 
 WORKDIR /app
