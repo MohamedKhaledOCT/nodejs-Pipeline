@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name:  nodejs
-        image:  halimo2/nodejs:latest
+        image:  halimo2/nodejs.org:latest
         livenessProbe:
           tcpSocket:
             port: 80
