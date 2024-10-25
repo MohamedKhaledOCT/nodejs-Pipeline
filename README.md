@@ -1,7 +1,3 @@
-Here's the updated README with **Minikube** in the requirements section:
-
----
-
 # Node.js.org DevOps Project
 
 ## Project Overview
