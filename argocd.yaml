@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/MohamedKhaledOCT/nodejs.org
     targetRevision: HEAD
-    path: . 
+    path: K8s
   destination:
     server: https://kubernetes.default.svc
     namespace: default
